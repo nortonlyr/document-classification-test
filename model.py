@@ -14,7 +14,9 @@ print(df.label.size)
 #df.label.value_counts().plot(kind='bar', figsize=(16,9))
 
 # train test split
-X_train, X_test, y_train, y_test = train_test_split(df, df.label, test_size = 0.30, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(df, df.label, test_size = 0.50, random_state = 0)
 
 # transfer hashed text into numeric matrix
-vertorize = TfidfVectorizer()
+vectorizer = TfidfVectorizer()
+tfidf1 = vectorizer.fit_transform(X_train.content.values.astype('U'))
+print(tfidf1)
