@@ -20,3 +20,5 @@ X_train, X_test, y_train, y_test = train_test_split(df, df.label, test_size = 0.
 vectorizer = TfidfVectorizer()
 tfidf1 = vectorizer.fit_transform(X_train.content.values.astype('U'))
 print(tfidf1)
+
+tfidf2 = vectorizer.transform(X_test.content.values.astype('U'))
