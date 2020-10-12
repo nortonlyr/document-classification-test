@@ -22,3 +22,9 @@ tfidf1 = vectorizer.fit_transform(X_train.content.values.astype('U'))
 print(tfidf1)
 
 tfidf2 = vectorizer.transform(X_test.content.values.astype('U'))
+
+# setup model, LogisticRegression()
+model = LogisticRegression()
+model.fit(tfidf1, y_train)
+
+print(model.score(tfidf2, y_test))
