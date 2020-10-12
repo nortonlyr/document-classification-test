@@ -28,3 +28,8 @@ model = LogisticRegression()
 model.fit(tfidf1, y_train)
 
 print(model.score(tfidf2, y_test))
+# score: 0.8534177866375152
+
+# save model and vectorizer into pickle file
+pickle.dump(model, open('LogisticRegressionModel.pkl', 'wb'))
+pickle.dump(vectorizer, open('vectorizer.pkl','wb'))
