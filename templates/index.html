@@ -3,6 +3,18 @@
 <html>
   <head>
     <title>LogisticRegressionModel</title>
+    <link rel = "stylesheet" type = "text/css" href="{{url_for('static', filename='home.css')}}">
   </head>
 
+  <body>
+      <h1>Document-Classifcation-Machine-Learning-Project</h1>
+      <p>Input your ceontent:</p>
+      <from method = "POST" action = "/predict" enctype="text/html">
+        <div class = 'ui input'>
+            <input type="text" name ="content" placeholder="document content here...">
+        </div>
+        <br>
+        <input type="submit" value="submit">
+    </from>
+  </body>
 </html>
