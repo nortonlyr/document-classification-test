@@ -31,5 +31,9 @@ def form():
         return flask.render_template('result.html', result = result)
 
 def getpredict(model, vec, data):
-    transformed_data = vec.tramsform([data])
+    transformed_data = vec.transform([data])
     return model.predict(transformed_data)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
