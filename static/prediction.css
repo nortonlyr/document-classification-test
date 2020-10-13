@@ -1,0 +1,22 @@
+html, body{
+    margin: 0;
+    height: 75%;
+
+}
+
+body {
+    text-align: center;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.container {
+    padding: 2px 2px 16px 2px;
+    margin: 20% auto;
+    text-align: center;
+    width: 60%;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(115, 185, 215)
+}
